@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] float thrustSpeed = 100f;
     [SerializeField] float turnSpeed = 1f;
+    [SerializeField] AudioClip engine;
     Rigidbody ribo;
     AudioSource auso;
     // Start is called before the first frame update
@@ -28,7 +29,7 @@ public class Movement : MonoBehaviour
         {
             if(!auso.isPlaying)
             {
-                auso.Play();
+                auso.PlayOneShot(engine);
             }
             ribo.AddRelativeForce(Vector3.up * thrustSpeed * Time.deltaTime);
         }
