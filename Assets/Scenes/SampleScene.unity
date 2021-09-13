@@ -651,10 +651,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 62a7189c3f1b6a8469bfecfb92df446d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 62a70b457cf9a234da6c6bd61581afc6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.51
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -918,6 +918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Launch
       objectReference: {fileID: 0}
+    - target: {fileID: 2692099900864636109, guid: 9cc3bdd5c10e0dc44b9ed7f1db83e161, type: 3}
+      propertyPath: m_TagString
+      value: Friendly
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc3bdd5c10e0dc44b9ed7f1db83e161, type: 3}
 --- !u!1001 &8133396646394547715
@@ -930,6 +934,10 @@ PrefabInstance:
     - target: {fileID: 2903862706177104830, guid: b9dfa81661778ad489d818bd8b49adf4, type: 3}
       propertyPath: m_Name
       value: Landing
+      objectReference: {fileID: 0}
+    - target: {fileID: 2903862706177104830, guid: b9dfa81661778ad489d818bd8b49adf4, type: 3}
+      propertyPath: m_TagString
+      value: Finish
       objectReference: {fileID: 0}
     - target: {fileID: 2977143620748102438, guid: b9dfa81661778ad489d818bd8b49adf4, type: 3}
       propertyPath: m_RootOrder
